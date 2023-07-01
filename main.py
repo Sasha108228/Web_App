@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
 	markup = types.ReplyKeyboardMarkup()
-	markup.add(types.KeyboardButton('open web-app', web_app=WebAppInfo(url='https://itproger.com')))
+	markup.add(types.KeyboardButton('open web-app', web_app=WebAppInfo(url='html/index.html')))
 	await message.answer('Hi', reply_markup=markup)
 
 
