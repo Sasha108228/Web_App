@@ -9,5 +9,5 @@ tg.MainButton.color = '#ff00ff';
 
 const onClose = () => {
 	tg.close()
-	tg.sendData('SendText')
+	// tg.sendData('SendText')
 }
