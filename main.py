@@ -12,6 +12,8 @@ async def start(message: types.Message):
 	markup.add(types.KeyboardButton('open web-app', web_app=WebAppInfo(url='https://sasha108228.github.io/Web_App/')))
 	await message.answer('Hi', reply_markup=markup)
 
+async def web_app_data_receive(message: Message):
+	await message.answer(message.web_app_data.data)
 
 
 executor.start_polling(dp)
