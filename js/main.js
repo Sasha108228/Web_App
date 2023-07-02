@@ -10,5 +10,5 @@ const onClose = () => {
 	tg.close();
 }
 
-var test = tg.initDataUnsafe?.user?.username;
-document.getElementById('username').value = test;
+let username = document.getElementById('username');
+username.innerText = tg.initDataUnsafe?.user?.username;
