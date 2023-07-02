@@ -7,5 +7,5 @@ tg.expand();
 
 
 const onClose = () => {
-	tg.close()
+	tg.close();
 }
